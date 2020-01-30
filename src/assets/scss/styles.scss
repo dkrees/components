@@ -1,0 +1,13 @@
+.card {
+	padding: $global-padding*2 $global-padding;
+	margin: $global-padding*2 0;
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	label {
+		font-weight: bold;
+	}
+}
