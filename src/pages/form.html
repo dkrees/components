@@ -1,0 +1,64 @@
+---
+page-title: Form
+---
+
+<div class="grid-container">
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell large-6 large-offset-3">
+      <div class="card">
+
+        <h1>Configuration Stuff</h1>
+
+        <div class="card-section">
+
+          <form id="configuration" data-abide novalidate>
+
+            <div data-abide-error class="alert callout" style="display: none;">
+              <p><i class="fi-alert"></i>Please complete all required fields</p>
+            </div>
+
+            <label for="provider">
+              Provider
+              <select id="provider" name="provider">
+                <option value="aws">AWS</option>
+                <option value="azure">Azure</option>
+                <option value="data center">Data Center</option>
+              </select>
+            </label>
+
+            <label>
+              Secret special code
+              <input type="password" name="secret" placeholder="Secret special code" required /> 
+              <span class="form-error">Secret special code is required!</span>
+            </label>     
+
+            <label for="key">
+              Key
+              <input id="key" type="text" name="key" placeholder="Key"/>
+            </label>
+            
+            <fieldset>
+              <label for="setting">Setting type</label>
+              <input type="radio" name="setting" value="Good" id="settingGood"><label for="settingGood">Good</label>
+              <input type="radio" name="setting" value="Better" id="settingBetter"><label for="settingBetter">Better</label>
+              <input type="radio" name="setting" value="Best" id="settingBest"><label for="settingBest">Best</label>
+            </fieldset>
+
+            <button type="submit" class="button small expanded">Submit</button>
+            <button type="button" class="button small expanded clear secondary" onclick="clearForm()">Cancel</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function clearForm() {
+    document.getElementById("configuration").reset();
+  }
+</script>
+
+

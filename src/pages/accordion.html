@@ -1,0 +1,61 @@
+---
+page-title: Accordion Thingy
+---
+
+
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-4">
+      <h1>Details</h1>
+      <p>stuff and things</p>
+    </div>
+
+    <div class="cell medium-8">
+      <h1>Response Actions</h1>
+
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Subscribe Users (4)</a>
+          <div class="accordion-content" data-tab-content>
+            <ul class="basic-list">
+              <li><input id="checkbox1" type="checkbox"><label for="checkbox1"><strong>Peter Piper</strong> (creator)</label><span class="float-right">x</span></li>
+              <li><input id="checkbox2" type="checkbox"><label for="checkbox2"><strong>Billy Hoffman</strong></label><span class="float-right">x</span></li>
+              <li><input id="checkbox3" type="checkbox"><label for="checkbox3"><strong>Brian Pearson</strong></label><span class="float-right">x</span></li>
+              <li><input id="checkbox4" type="checkbox"><label for="checkbox4"><strong>Peter Griffin</strong></label><span class="float-right">x</span></li>
+            </ul>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Subscribe Integration (none)</a>
+          <div class="accordion-content" data-tab-content>
+            <label for="integration">
+              <select id="integration" name="integration">
+                <option value="">No Integration Selected</option>
+                <option value="webhook1">Webhook 1</option>
+                <option value="webhook2">Webhook 2</option>
+                <option value="webhook3">Webhook 3</option>
+              </select>
+            </label>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Automated Response (2)</a>
+          <div class="accordion-content" data-tab-content>
+            <select id="response-select" name="response-select">
+                <option value="">Select Automated Response Actions</option>
+                <option value="response-select1">Endpoint Security</option>
+                <option value="response-select2">Disable User</option>
+                <option value="response-select3">Launch Warhead at Attacker's Location</option>
+              </select>
+            <ul class="basic-list">
+              <li><input id="response1" type="checkbox"><label for="response1"><strong>IP Blocking</strong></label><span class="float-right">x</span></li>
+              <li><input id="response2" type="checkbox"><label for="response2"><strong>Host Quarantine</strong></label><span class="float-right">x</span></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    
+    </div>
+  </div>
+</div>

@@ -64,5 +64,8 @@
 @include motion-ui-animations;
 
 // Custom Styles
-@import 'styles';
+@import 'components/card';
+@import 'components/accordion';
+@import 'components/list';
+@import 'components/tabs';
 
