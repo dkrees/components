@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs | Components</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+<body>
+
+
+<ul class="menu">
+  <li><a href="form.html">Form</a></li>
+  <li><a href="accordion.html">Accordion</a></li>
+  <li><a href="vertical-tabs.html">Vertical Tabs</a></li>
+</ul>
+<div class="grid-container">
+  <div class="grid-x grid-margin-x">
+    <div class="cell medium-4">
+      <h1>Details</h1>
+      <p>stuff and things</p>
+    </div>
+
+    <div class="cell medium-4 medium-4">
+      <h1>Actions</h1>
+      <ul class="vertical tabs" data-tabs id="example-tabs" data-active-collapse="true">
+        <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Subscribe Users (4)<span class="float-right">></span></a></li>
+        <li class="tabs-title"><a href="#panel2v">Subscribe Integrations (none)<span class="float-right">></span></a></li>
+        <li class="tabs-title"><a href="#panel3v">Automated Response (2)<span class="float-right">></span></a></li>
+      </ul>
+    </div>
+    <div class="cell medium-4">
+      <h1>Options</h1>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1v">
+          <label for="user-select">
+            <select id="user-select" name="user-select">
+              <option value="">Select Users</option>
+              <option value="user1">Leia</option>
+              <option value="user2">Luke</option>
+              <option value="user3">R2D2</option>
+            </select>
+          </label>
+          <ul class="basic-list">
+            <li><input id="checkbox1" type="checkbox"><label for="checkbox1"><strong>Peter Piper</strong> (creator)</label><span class="float-right">x</span></li>
+            <li><input id="checkbox2" type="checkbox"><label for="checkbox2"><strong>Billy Hoffman</strong></label><span class="float-right">x</span></li>
+            <li><input id="checkbox3" type="checkbox"><label for="checkbox3"><strong>Brian Pearson</strong></label><span class="float-right">x</span></li>
+            <li><input id="checkbox4" type="checkbox"><label for="checkbox4"><strong>Peter Griffin</strong></label><span class="float-right">x</span></li>
+          </ul>
+        </div>
+        <div class="tabs-panel" id="panel2v">
+          <label for="integration">
+            <select id="integration" name="integration">
+              <option value="">No Integration Selected</option>
+              <option value="webhook1">Webhook 1</option>
+              <option value="webhook2">Webhook 2</option>
+              <option value="webhook3">Webhook 3</option>
+            </select>
+          </label>
+        </div>
+        <div class="tabs-panel" id="panel3v">
+          <select id="response-select" name="response-select">
+            <option value="">Select Automated Response Actions</option>
+            <option value="response-select1">Endpoint Security</option>
+            <option value="response-select2">Disable User</option>
+            <option value="response-select3">Launch Warhead at Attacker's Location</option>
+          </select>
+          <ul class="basic-list">
+            <li><input id="response1" type="checkbox"><label for="response1"><strong>IP Blocking</strong></label><span class="float-right">x</span></li>
+            <li><input id="response2" type="checkbox"><label for="response2"><strong>Host Quarantine</strong></label><span class="float-right">x</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
